@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getaway Mansion | Gallery</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='https://fonts.googleapis.com/css?family=Raleway	' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/gallery.css">
+   
+</head>
+<body>
+  <!---start-Wrap--->
+			<!---start-header--->
+			<div class="header">
+				<div class="wrap">
+					<div class="header-top">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo2.png" title="logo" /></a>
+						</div>
+						<div class="contact-info">
+							<p class="phone">Call us : (061) 518972</a></p>
+							<p class="gpa">GPS : <a href="https://www.google.com/maps/place/SAI+MANNAT/@19.0714617,73.0845242,16.18z/data=!4m6!3m5!1s0x3be7c1fb5b9ea011:0xc3067d98b973f1d5!8m2!3d19.0708176!4d73.0824813!16s%2Fg%2F11cm0vyjfm?entry=ttu">View map</a></p>
+							<p class="code">BROUGHT TO YOU BY: BOOLEAN AUTOCRATS</a></p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="header-top-nav">
+					<div class="wrap">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li class="active"><a href="gallery.html">Gallery</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="about.html">About us</a></li>
+							<li><a href="booking.html">Book Now</a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!---End-header--->
+			<div class="clear"> </div>
+            <br>
+            <div class="full-img" id="fullImgBox">
+                <img src="images/img1.jpg" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+                
+            </div>
+            <div class="img-gallery">
+                <img src="images/img1.jpg" onclick="openFullImg(this.src)">
+                <img src="images/img2.jpg" onclick="openFullImg(this.src)">
+                <img src="images/img3.jpg" onclick="openFullImg(this.src)">
+                <img src="images/img4.jpg" onclick="openFullImg(this.src)">
+                <img src="images/img5.jpg" onclick="openFullImg(this.src)">
+                <img src="images/img6.jpg" onclick="openFullImg(this.src)">
+                <img src="images/img7.jpg" onclick="openFullImg(this.src)">
+                <img src="images/img8.jpg"onclick="openFullImg(this.src)" >
+            </div>
+            <script>
+                var fullImgBox = document.getElementById("fullImgBox");
+                var fullImg = document.getElementById("fullImg");
+
+                function  openFullImg(pic) {
+                    fullImgBox.style.display = "flex";
+                    fullImg.src = pic;
+                }
+                function closeFullImg() {
+                    fullImgBox.style.display = "none";
+                }
+
+            </script>
+ </div>
+ <div class="clear"> </div>
+ <div class="boxs">
+ <div class="wrap">
+ <div class="box">
+
+ </div>
+ <div class="box center-box">
+	 <ul>
+		<li><a href="https://www.trivago.in/">Leave us Feedback</a></li>
+		<li><a href="https://www.trivago.in/">Reviews and Ratings</a></li>
+		<li><a href="faqs.html">FAQs</a></li>
+	 </ul>
+ </div>
+ <div class="clear"> </div>
+</div>
+<!---start-box---->
+</div>
+<!---start-copy-Right----->
+<div class="copy-tight">
+<p>&copy Getaway Mansion,Kharghar 2023 "THIS PROJECT IS BROUGHT TO YOU BY BOOLEAN AUTOCRATS"</a></p>
+</div>
+<!---End-copy-Right----->
+</div>
+<!---End-content----->
+</div>
+<!---End-Wrap--->
+</body>
+</html>

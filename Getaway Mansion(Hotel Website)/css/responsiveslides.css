@@ -1,0 +1,37 @@
+* {box-sizing: border-box;}
+        .slideshow-container {
+            max-width: 1600px;
+            position: relative;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+            width: 100%;
+            padding: 0.5px 0;
+            text-align: center;
+        }
+        .mySlides img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 10%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
