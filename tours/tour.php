@@ -38,6 +38,7 @@
                 <span>How It Works</span>
                 <h1>Book With 3 Easy Steps</h1>
             </div>
+            <br>
             <div class="tour-container">
                 <div class="box">
                     <i class="bx bxs-map"></i>
@@ -49,7 +50,7 @@
 
                 <div class="box">
                     <i class="bx bxs-calendar-check"></i>
-                    <h2>Pick-Up Date</h2>
+                    <h2>Trip Date</h2>
                     <p>Whether it's a weekday or a weekend, we're here to make your trip hassle-free. Feel free to 
                         schedule your trip any time that you're able.
                     </p>

@@ -82,6 +82,7 @@
                         <th>Tour Name</th>
                         <th>Tour Time</th>
                         <th>Tour Image</th>
+                        <th>Tour Itinerary</th>
                         <th>Tour Price</th>
                         <th>Tour Availability</th>
                     </tr>
@@ -98,6 +99,7 @@
                         <td><?php echo $rows['tour_name'];?></td>
                         <td><?php echo $rows['tour_time'];?></td>
                         <td><?php echo $rows['tour_img'];?></td>
+                        <td><?php echo $rows['tour_it'];?></td>
                         <td><?php echo $rows['tour_price'];?></td>
                         <td><?php echo $rows['tour_availability'];?></td>
                     </tr>

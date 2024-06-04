@@ -43,11 +43,13 @@
 		$tour_time = $_POST['time'];
 		$tour_price = $_POST['price'];
         $imagename=$_POST["uploadedimage"];
-        $tour_img = "img/cars".$imagename;
+        $iti=$_POST["uploadedit"];
+        $tour_img = "img/".$imagename;
+        $tour_it = "img/".$iti;
         $tour_availability = "yes";
 
         
-		$sqlquery = "INSERT INTO tour VALUES ('$tour_id', '$tour_name', '$tour_time', '$tour_img', '$tour_price','$tour_availability')";
+		$sqlquery = "INSERT INTO tour VALUES ('$tour_id', '$tour_name', '$tour_time', '$tour_img', '$tour_it', '$tour_price','$tour_availability')";
         $result1 = $conn->query($sqlquery);
 		// Close connection
 		mysqli_close($conn);

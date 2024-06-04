@@ -60,7 +60,7 @@
                     </div>
                     <div class="input-box">
                     <span style="color: #fff">Tour Itinerary:</span>
-                    <input name="uploadedimage" type="file">
+                    <input name="uploadedit" type="file">
                     </div>
                     <br>
                     <div class="btn">
