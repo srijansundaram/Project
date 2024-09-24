@@ -1,0 +1,10 @@
+**DATABASE NAME**
+travelbug
+
+**Employee Login Details**
+
+Username: harry
+Password: password
+
+Username: jenny
+Password: jenny

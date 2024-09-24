@@ -1,0 +1,316 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: url('../images/h4.jpeg');   
+    position:relative;
+    background-repeat: no-repeat;
+    /* background-position: center right; */
+    background-size: cover;
+    align-items: center;
+}
+:root{
+    --main-color: #fe5b3d;
+    --second-color: #ffac38;
+    --text-color: #444;
+    --gradient: linear-gradient(#fe5b3d, #ffac38);
+}
+/* Custom Scroll Bar */
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+    background: var(--main-color);
+}
+html::-webkit-slider-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+section{
+    padding: 50px 100px;
+}
+header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* background: #eeeff1; */
+    padding: 15px 100px;
+}
+.logo img{
+    width: 40px;
+}
+.navbar {
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.navbar a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--gradient);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.header-btn a {
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.header-btn .sign-in{
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.header-btn .sign-in:hover{
+    background: var(--main-color);
+}
+.home{
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text{
+	margin-top:150px;
+}
+.text h1{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+.text span {
+    color: var(--main-color);
+}
+.text p{
+    font-size: large;
+    margin: 00.5rem 0 1rem;
+}
+.heading{
+    margin: 20px;
+    text-align: center;
+}
+.heading span{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.heading h1{
+    font-size: 2rem;
+}
+
+/* New CSS */
+.admin {
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.admin .avatar {
+    width: 400px; 
+    height: auto;
+}
+
+.admin h1 {
+    margin-top: 20px; 
+    font-size: 24px; 
+    color: #d9d5d4; /* Primary color */
+}
+
+.admin span{
+	color: #edc8ac;
+}
+
+.center-container {
+  position: relative; /* Needed for absolute positioning of child elements */
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.center-container h1 {
+  	position: relative;
+  	left: 400px; /* Adjust the value to move the heading to the right */
+  	font-size: 2.5rem;
+	padding: 20px;
+}
+
+.center-containers {
+  position: relative; /* Needed for absolute positioning of child elements */
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.center-containers h1 {
+  	position: relative;
+  	left: 300px; /* Adjust the value to move the heading to the right */
+  	font-size: 2.5rem;
+	padding: 20px;
+}
+
+.center-containerss {
+  position: relative; /* Needed for absolute positioning of child elements */
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.center-containerss h1 {
+  	position: relative;
+  	left: 400px; /* Adjust the value to move the heading to the right */
+  	font-size: 2.5rem;
+	padding: 20px;
+}
+
+
+.form-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input-box {
+    flex: 1;
+    min-width: 200px; /* Minimum width for responsive design */
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--main-color);
+}
+
+/* Style for input boxes to ensure alignment in the same line */
+.form-group > .input-box {
+    flex: 1 1 45%; /* Adjusts width for side-by-side alignment */
+}
+
+.table-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+table {
+    border-collapse: collapse; /* Merge borders */
+    width: 100%; /* Full width of the container */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 12px; /* Padding for cells */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray for header */
+    font-weight: bold; /* Bold text for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: blue;
+}
+
+.pagination span {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+
