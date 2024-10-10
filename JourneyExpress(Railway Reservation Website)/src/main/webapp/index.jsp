@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<title>Journey Express|Home</title>
 		<link href="css/styles.css" rel="stylesheet" />
+		 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	</head>
 	<body>
 		<header style="position: fixed;">
@@ -33,5 +34,20 @@
 	        </div>
 	    </section>
 	        <!-- End Home -->
+	    <script type="text/javascript">
+	        document.addEventListener("DOMContentLoaded", function() {
+	            const urlParams = new URLSearchParams(window.location.search);
+	            const status = urlParams.get('status');
+	            
+	            if (status === 'loggedOut') {
+	                Swal.fire({
+	                    title: 'Goodbye!',
+	                    text: 'You have successfully logged out.',
+	                    icon: 'success',
+	                    confirmButtonText: 'OK'
+	                });
+	            }
+	        });
+    	</script>    
 	</body>
 </html>

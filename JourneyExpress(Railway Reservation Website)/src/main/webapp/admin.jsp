@@ -31,5 +31,24 @@
         	<img class="avatar" src="images/logo.png" alt="Company Logo"/>
         	<h1><span>Welcome</span> to <span>Journey Express</span> Admin Panel</h1>
     	</div>
+    	<input type="hidden" id="status" value="<%= request.getAttribute("status") != null ? request.getAttribute("status") : "" %>">
+
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script type="text/javascript">
+    		document.addEventListener("DOMContentLoaded", function() {
+	        	var status = document.getElementById("status").value;
+	        	console.log("Status:", status); // Debugging line
+	        
+		        if (status === "success") {
+		            Swal.fire({
+		                title: 'Welcome!',
+		                text: 'to Journey Express Admin Panel',
+		                icon: 'success',
+		                confirmButtonText: 'OK'
+		            });
+		        }
+    		});
+		</script>
+    	
 	</body>
 </html>

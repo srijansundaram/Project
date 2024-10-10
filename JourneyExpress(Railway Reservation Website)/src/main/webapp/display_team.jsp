@@ -101,6 +101,7 @@
         %>
                         </tbody>
                     </table>
+                     <a href="registration.jsp" class="signup-image-link">Add a new member</a>
         <%
                     // Pagination controls
                     if (totalPages > 1) {
@@ -120,6 +121,7 @@
                         }
         %>
                         </div>
+                       
         <%
                     }
                 }

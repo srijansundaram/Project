@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 	</head>
 	<body>
-		<input type="hidden" id="status" value="<%= request.getAttribute("status") %>">
+		<input type="hidden" id="status" value="<%= request.getAttribute("status") != null ? request.getAttribute("status") : "" %>">
 		<header style="position: fixed;">
 			<a href="index.jsp" class="logo"><img src="images/logo.png" alt=""></a>
 				<div class="bx bx-menu" id="menu-icon"></div>
@@ -43,8 +43,7 @@
 							<figure>
 								<img src="images/signin-image.jpg" alt="sing up image">
 							</figure>
-							<a href="registration.jsp" class="signup-image-link">Create an
-								account</a>
+							
 						</div>
 		
 						<div class="signin-form">
@@ -96,6 +95,7 @@
 			
 		<script type="text/javascript">
 			var status = document.getElementById("status").value;
+			   console.log("Status:", status); 
 			if(status == "failed"){
 				Swal.fire({
 					  title: 'Sorry!',
@@ -121,6 +121,16 @@
 					  confirmButtonText: 'OK'
 					});
 			}
+			console.log(status); // Check what status is being retrieved
+
+		    if (status === "success") {
+		        Swal.fire({
+		            title: 'Welcome!',
+		            text: 'to Journey Express Admin Panel',
+		            icon: 'success',
+		            confirmButtonText: 'OK'
+		        });
+		    }
 		</script>
 	</body>
 </html>
