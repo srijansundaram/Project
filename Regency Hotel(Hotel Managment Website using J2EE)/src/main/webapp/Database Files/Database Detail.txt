@@ -1,0 +1,5 @@
+Database Name: hotel
+*************************
+For login, logout and registration
+Database: journeyexpress (available in project)
+Table: users
